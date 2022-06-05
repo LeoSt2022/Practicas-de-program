@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadatos -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título de página + Iconos-->
+        <title>Formulario DEV</title>
+        <link rel="shorcut icon" href="Iconos/formularioIcono.png">
+    </head>
+
+    <body>  
+
+        <!-- Encabezado con título y subtitulo (ambos con css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Empresa de DEVs</h1>
+            <p id="subtitulo">Complete con su información</p>
+            <br>
+        </div>
+
+        <!-- Inicio De Formulario -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo de nombre con título "nombre" y css de clase "campo" -->
+                <div class="campo">
+                    <label for="name"><strong>Nombre</strong></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <!-- Campo de apellido con título de "apellido" y css de clase "campo" -->
+                <div class="campo">
+                    <label for="apellido"><strong>Apellido</strong></label>
+                    <input type="text" name="sobrenome" id="apellido" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de apellido con título de "email" y css de clase "campo"-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opciones de botones seleccionables (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>¿Qué tipo de programación haces?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <!-- Campo de Grado de especialización con 3 opciones a elegir (select option) y css de classe "campo" -->
+            <div class="campo">
+                <label for="Grado"><strong>Especialización</strong></label>
+                <select id="Grado" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Semi-Senior</option>
+                  <option>Senior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de tecnologías dominadas para elegir 1 o más opciones para marcar (checkbox) y css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione las tecnologias que dominada:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6"> Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7"> Java</label>
+                </div>
+            </fieldset>
+
+            <!-- Caja de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Cuéntanos un poco más sobre tu experiencia: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Boton para enviar el formulário -->
+            <button class="boton" type="submit">ENVIAR</button>            
+
+        </form>
+        
+    </body>
+
+</html>
